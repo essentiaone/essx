@@ -1,0 +1,23 @@
+[Unit]
+Description=ESS's distributed currency daemon
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/var/lib/essd/essd.pid
+
+ExecStart=/usr/bin/essd -daemon -pid=/var/lib/essd/essd.pid \
+          -conf=/etc/ess/ess.conf -datadir=/var/lib/essd
+
+ExecStop=-/usr/bin/ess-cli -conf=/etc/ess/ess.conf \
+         -datadir=/var/lib/essd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

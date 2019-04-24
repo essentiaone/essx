@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Ess
+Comment=Ess P2P Cryptocurrency
+Comment[fr]=Ess, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Ess, eşten eşe kriptografik sanal para birimi
+Exec=ess-qt %u
+Terminal=false
+Type=Application
+Icon=ess128
+MimeType=x-scheme-handler/ess;
+Categories=Office;Finance;
