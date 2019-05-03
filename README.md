@@ -61,7 +61,7 @@ GUI application is not supported.
 <table>
 <th colspan=4>PoS - Proof of Stake with Masternodes</th>
 <tr><th>Recipients</th><th>Percentage</th></tr>
-<tr><td>Staking</td><td>45% *</td></tr>
+<tr><td>Staking</td><td>38% *</td></tr>
 <tr><td>Masternodes</td><td>45% *</td></tr>
 </table>
 
