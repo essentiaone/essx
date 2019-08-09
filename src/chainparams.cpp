@@ -161,7 +161,7 @@ public:
         pchMessageStart[1] = 0xa0;
         pchMessageStart[2] = 0x8d;
         pchMessageStart[3] = 0x8f;
-        premineAmt = 617222416 * COIN;
+        premineAmt = 1317488573 * COIN;
 
         vAlertPubKey = ParseHex("0231c07d17c2d69facd84908434dc402b5a9b9e25e5062d1e65163acc7afd0e3ef");
         nDefaultPort = 31488;
@@ -215,15 +215,15 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1546002278;
+        genesis.nTime = 1563440811;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 4540128;
+        genesis.nNonce = 78008;
         genesis.payee = txNew.vout[0].scriptPubKey;
 
         nExtCoinType = 11111;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("00000638b79bc972b379d7f57e3949b333c5aeb9dca4c344116642d3888ec0c5"));
+        assert(hashGenesisBlock == uint256("000002d4f5445a6517125b4f0d7d719beba8c50960c5b3edacbbf8d23b7c13da"));
         assert(genesis.hashMerkleRoot == uint256("0xec803cc6b5e68728ec0117cb1154b6d2893152f89d61319647db106908888bd6"));
 
         vSeeds.push_back(CDNSSeedData("pool1.requiremsgvaluemsgsenderbalance.world", "pool1.requiremsgvaluemsgsenderbalance.world"));

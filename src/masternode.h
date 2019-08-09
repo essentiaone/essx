@@ -22,6 +22,8 @@
 #define MASTERNODE_REMOVAL_SECONDS (130 * 60)
 #define MASTERNODE_CHECK_SECONDS 5
 
+const int MAX_MARS_MN_AMOUNT = 65;
+
 using namespace std;
 
 class CMasternode;
