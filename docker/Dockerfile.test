@@ -15,8 +15,8 @@ COPY docker/blockchain-monitoring /node_exporter
 
 ARG RPCUSER=user
 ARG RPCPASS=123
-ARG RPCPORT=31489
-ARG PORT=31488
+ARG RPCPORT=41313
+ARG PORT=41312
 
 #ENV PARAMS="reindex=1 addressindex=1 txindex=1"
 ENV RPCUSER=${RPCUSER}

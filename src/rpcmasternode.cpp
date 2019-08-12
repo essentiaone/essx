@@ -35,6 +35,29 @@ static CMasternode::Tier GetMasternodeTierFromString(std::string str)
     return CMasternode::MASTERNODE_TIER_INVALID;
 }
 
+bool isMarsAvailable() {
+    int count = 0;
+    int nHeight;
+    {
+        LOCK(cs_main);
+        CBlockIndex* pindex = chainActive.Tip();
+        if(!pindex) return 0;
+        nHeight = pindex->nHeight;
+    }
+    for(auto &&entry : mnodeman.GetFullMasternodeVector()) {
+        const CMasternode* mn = mnodeman.Find(entry.vin);
+
+         if (mn != NULL && CMasternode::Tier::MASTERNODE_TIER_MARS == static_cast<CMasternode::Tier>(mn->nTier)) {
+            count++;
+        }
+    }
+
+     if (count >= MAX_MARS_MN_AMOUNT) {
+        return false;
+    } 
+    return true;
+}
+
 Value debug(const Array& params, bool fHelp)
 {
 	Object obj;
@@ -66,6 +89,10 @@ Value allocatefunds(const Array& params, bool fHelp)
 	string strAmt = params[2].get_str();
 
     auto nMasternodeTier = GetMasternodeTierFromString(strAmt);
+
+    if (CMasternode::Tier::MASTERNODE_TIER_MARS == nMasternodeTier && !isMarsAvailable()) 
+        throw runtime_error("There are no available slots for Mars masternode \n");
+
     if(!CMasternode::IsTierValid(nMasternodeTier))
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid masternode tier");
 
@@ -261,7 +288,7 @@ Value masternodeconnect(const Array& params, bool fHelp)
 			"1. \"address\"     (string, required) IP or net address to connect to\n"
 
 			"\nExamples:\n" +
-			HelpExampleCli("masternodeconnect", "\"192.168.0.6:31488\"") + HelpExampleRpc("masternodeconnect", "\"192.168.0.6:31488\""));
+			HelpExampleCli("masternodeconnect", "\"192.168.0.6:41312\"") + HelpExampleRpc("masternodeconnect", "\"192.168.0.6:41312\""));
 
 	std::string strAddress = params[0].get_str();
 

@@ -627,7 +627,7 @@ bool CMasternodeBroadcast::CheckAndUpdate(int& nDos)
     }
 
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
-        if (addr.GetPort() != 31488) return false;
+        if (addr.GetPort() != 41312) return false;
     } else if (addr.GetPort() == 31589)
         return false;
 
