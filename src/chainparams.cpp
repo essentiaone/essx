@@ -164,7 +164,7 @@ public:
         premineAmt = 1317488573 * COIN;
 
         vAlertPubKey = ParseHex("0231c07d17c2d69facd84908434dc402b5a9b9e25e5062d1e65163acc7afd0e3ef");
-        nDefaultPort = 31488;
+        nDefaultPort = 41312;
         bnProofOfWorkLimit = ~uint256(0) >> 20;			// ESS starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 60 * 24 * 365;
         nMaxReorganizationDepth = 100;
@@ -226,8 +226,8 @@ public:
         assert(hashGenesisBlock == uint256("000002d4f5445a6517125b4f0d7d719beba8c50960c5b3edacbbf8d23b7c13da"));
         assert(genesis.hashMerkleRoot == uint256("0xec803cc6b5e68728ec0117cb1154b6d2893152f89d61319647db106908888bd6"));
 
-        vSeeds.push_back(CDNSSeedData("pool1.requiremsgvaluemsgsenderbalance.world", "pool1.requiremsgvaluemsgsenderbalance.world"));
-        vSeeds.push_back(CDNSSeedData("pool2.requiremsgvaluemsgsenderbalance.world", "pool2.requiremsgvaluemsgsenderbalance.world"));
+        vSeeds.push_back(CDNSSeedData("pool1.hellotoeveryonewhowantseasymoneystrangepeople.xyz", "pool1p.hellotoeveryonewhowantseasymoneystrangepeople.xyz"));
+        vSeeds.push_back(CDNSSeedData("pool2.hellotoeveryonewhowantseasymoneystrangepeople.xyz", "pool2p.hellotoeveryonewhowantseasymoneystrangepeople.xyz"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -298,7 +298,7 @@ public:
         premineAmt = 2534320700;
 
         vAlertPubKey = ParseHex("046e70d194b1b6b63b9c5431ea83c7b17d0db8930408b1e7937e41759a799e8fcd22d99ffc0c880094bb07a852a9020f810068417e65d19def8ffbdfa90727b637");
-        nDefaultPort = 31488;
+        nDefaultPort = 41312;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // ESS starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 1000;
         nMaxReorganizationDepth = 100;
