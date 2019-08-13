@@ -226,8 +226,10 @@ public:
         assert(hashGenesisBlock == uint256("000002d4f5445a6517125b4f0d7d719beba8c50960c5b3edacbbf8d23b7c13da"));
         assert(genesis.hashMerkleRoot == uint256("0xec803cc6b5e68728ec0117cb1154b6d2893152f89d61319647db106908888bd6"));
 
-        vSeeds.push_back(CDNSSeedData("pool1.hellotoeveryonewhowantseasymoneystrangepeople.xyz", "pool1p.hellotoeveryonewhowantseasymoneystrangepeople.xyz"));
-        vSeeds.push_back(CDNSSeedData("pool2.hellotoeveryonewhowantseasymoneystrangepeople.xyz", "pool2p.hellotoeveryonewhowantseasymoneystrangepeople.xyz"));
+        vSeeds.push_back(CDNSSeedData("pool1.hellotoeveryonewhowantseasymoneystrangepeople.xyz", "pool1.hellotoeveryonewhowantseasymoneystrangepeople.xyz"));
+        vSeeds.push_back(CDNSSeedData("pool2.hellotoeveryonewhowantseasymoneystrangepeople.xyz", "pool2.hellotoeveryonewhowantseasymoneystrangepeople.xyz"));
+        vSeeds.push_back(CDNSSeedData("pool1p.hellotoeveryonewhowantseasymoneystrangepeople.xyz", "pool1p.hellotoeveryonewhowantseasymoneystrangepeople.xyz"));
+        vSeeds.push_back(CDNSSeedData("pool2p.hellotoeveryonewhowantseasymoneystrangepeople.xyz", "pool2p.hellotoeveryonewhowantseasymoneystrangepeople.xyz"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
