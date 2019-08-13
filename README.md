@@ -1,8 +1,6 @@
 ESS Core
 =====================================
 
-[![Build Status](https://travis-ci.org/essentiaone/ess.svg?branch=master)](https://travis-ci.org/essentiaone/ess) 
-
 ESS - is a open-source cryptocurrency with Proof of Stake consensus mechanism and masternode functionality. ESSX provide to user ability to send, spend and earn coins, and with PoS - stake coin or allocate coins in the masternodes. 
 ESS provide two tiers of masternodes: 
   - Mercury masternode (needs to allocate 100,000 coins)

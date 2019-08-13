@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Andrew Horbach <andriy.h@essentia.one>
+MAINTAINER Andrew Horbach <betuha3@gmail.com>
 
 RUN apt-get -y update && \
 	apt-get --no-install-recommends -yq install software-properties-common && \
