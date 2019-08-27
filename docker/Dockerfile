@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Andrew Horbach <andriy.h@essentia.one>
+MAINTAINER Andrew Horbach <betuha3@gmail.com>
 
 RUN apt-get -y update && \
 	apt-get --no-install-recommends -yq install software-properties-common && \
@@ -10,8 +10,8 @@ RUN mkdir -p /ess ; cd /ess ; wget https://bin.essentia.one/bin/essd-linux.tar.g
 
 ARG RPCUSER=user
 ARG RPCPASS=123
-ARG RPCPORT=31489
-ARG PORT=31488
+ARG RPCPORT=41313
+ARG PORT=41312
 
 ENV RPCUSER=${RPCUSER}
 ENV RPCPASS=${RPCPASS}

@@ -2245,14 +2245,30 @@ static CAmount GetFullBlockValue(int nHeight)
         }
     }
 
-    CAmount nSubsidy = 1250;
-    auto nSubsidyHalvingInterval = Params().SubsidyHalvingInterval();
-    // first two intervals == two years, same amount 1250
-    for (int i = nSubsidyHalvingInterval * 2; i <= nHeight; i += nSubsidyHalvingInterval) {
-        nSubsidy -= 100;
+    CAmount nSubsidy = 0;
+    if (0 < nHeight && 525600 >= nHeight) {
+        nSubsidy = 190;
+    } 
+    else if (525600 < nHeight && 1051200 >= nHeight) {
+        nSubsidy = 167;
     }
-
-    return std::max<CAmount>(nSubsidy, 250) * COIN;
+    else if (1051200 < nHeight && 1576800 >= nHeight) {
+        nSubsidy = 142;
+    }
+    else if (1576800 < nHeight && 2102400 >= nHeight) {
+        nSubsidy = 117;
+    }
+    else if (2102400 < nHeight && 2628000 >= nHeight) {
+        nSubsidy = 92;
+    }
+    else if (2628000 < nHeight && 3153600 >= nHeight) {
+        nSubsidy = 75;
+    }
+    else if (3153600 < nHeight && 3679200 >= nHeight) {
+        nSubsidy = 50;
+    }
+    
+    return nSubsidy * COIN;
 }
 
 CBlockRewards GetBlockSubsidity(int nHeight)
