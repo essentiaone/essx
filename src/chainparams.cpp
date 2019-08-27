@@ -168,7 +168,7 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 20;			// ESS starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 60 * 24 * 365;
         nMaxReorganizationDepth = 100;
-        nEnforceBlockUpgradeMajority = 750; 
+        nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
@@ -357,10 +357,6 @@ public:
         assert(hashGenesisBlock == uint256("0x0000050d77a86f7a3aa38dfac9c23821ed2c5d3002c2e02f9626c7521cd8ced5"));
         assert(genesis.hashMerkleRoot == uint256("0xb68f3b6cefa827045e8bac505203050c9d247c10d7fe2a951575924427a51052"));
 
-        
-        //vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
-        //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
-        //vSeeds.push_back(CDNSSeedData("178.254.23.111", "178.254.23.111"));           // Single node address
         vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
@@ -458,7 +454,7 @@ public:
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1537971708;
         genesis.nNonce = 749845;
-        
+
         pchMessageStart[0] = 0xdf;
         pchMessageStart[1] = 0xa0;
         pchMessageStart[2] = 0x8d;
@@ -517,7 +513,7 @@ public:
         nPoolMaxTransactions = 2;
         strSporkKey = "034ffa41e5cffdd009f3b34a3e1482ec82b514bb218b7648948b5858cc5c035adb";
         strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
-        nStartMasternodePayments = 1551877268; 
+        nStartMasternodePayments = 1551877268;
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
         // here because we only have a 8 block finalization window on testnet
     }
