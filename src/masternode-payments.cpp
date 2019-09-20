@@ -27,8 +27,7 @@ CCriticalSection cs_vecPayments;
 CCriticalSection cs_mapMasternodeBlocks;
 CCriticalSection cs_mapMasternodePayeeVotes;
 
-//const std::string TREASURY_PAYMENT_ADDRESS("DPhJsztbZafDc1YeyrRqSjmKjkmLJpQpUn");
-const std::string TREASURY_PAYMENT_ADDRESS("");
+const std::string TREASURY_PAYMENT_ADDRESS("DCmQz3s2ddiTDjeCHXfgYBXztgyoPVgMSB");
 
 const std::string TREASURY_PAYMENT_ADDRESS_TESTNET("xw7G6toCcLr2J7ZK8zTfVRhAPiNc8AyxCd");
 
