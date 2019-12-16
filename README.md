@@ -13,8 +13,8 @@ Essentia Wallet
 -----------
 Essentia one offers multi-platform support for wallet application. Please click on the required package to get the latest version.
 - [Windows](https://essentia.one/installations/Essentia-windows-0.0.2.exe)
-- [Linux](https://essentia.one/installations/Essentia-ubuntu-0.0.2.AppImage)
-- [macOS](https://essentia.one/installations/Essentia-0.0.2.dmg)
+- [Linux](https://essentia.one/installations/Essentia-0.0.5.pkg)
+- [macOS](https://essentia.one/installations/Essentia-0.0.5.pkg)
 - [iOS](https://itunes.apple.com/ua/app/essentia/id1438535734?mt=8)
 - [Android](https://play.google.com/store/apps/details?id=one.essentia.app)
 
