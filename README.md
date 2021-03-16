@@ -155,6 +155,12 @@ Rewards distribution
 <tr><td>Network Support</td><td>17% </td></tr>
 </table>
 
+Boot addresses
+-----------
+Following addresses can be used in peers list.
+95.217.57.62
+95.216.102.220
+
 Licence
 -----------
 
