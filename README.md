@@ -158,8 +158,8 @@ Rewards distribution
 Boot addresses
 -----------
 Following addresses can be used in peers list.
-95.217.57.62
-95.216.102.220
+- 95.217.57.62
+- 95.216.102.220
 
 Licence
 -----------
